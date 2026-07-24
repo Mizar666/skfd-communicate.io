@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天致制作站</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #ccc; background: #000; }
+    /* Navigation */
+    nav {
+      position: fixed; top: 0; width: 100%; background: rgba(20,20,30,0.95);
+      backdrop-filter: blur(8px); z-index: 100; box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+    }
+    nav .inner {
+      max-width: 1100px; margin: 0 auto; padding: 14px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    nav .logo { font-size: 1.3rem; font-weight: 700; color: #eee; }
+    nav .logo span { color: #4da6ff; }
+    nav a { text-decoration: none; color: #aaa; margin-left: 24px; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover { color: #4da6ff; }
+    /* Hero */
+    .hero {
+      margin-top: 64px; min-height: 70vh;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      display: flex; align-items: center; justify-content: center; text-align: center; padding: 60px 24px;
+    }
+    .hero h1 { font-size: 3rem; color: #fff; margin-bottom: 20px; }
+    .hero p { font-size: 1.15rem; color: #a8b2d1; max-width: 640px; margin: 0 auto 30px; }
+    .hero .btn {
+      display: inline-block; padding: 12px 36px; background: #4da6ff;
+      color: #fff; text-decoration: none; border-radius: 30px; font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(233,69,96,0.4); }
+    /* Section */
+    section { padding: 80px 24px; background: #000; }
+    section:nth-child(even) { background: #111; }
+    .section-title {
+      text-align: center; font-size: 2rem; margin-bottom: 16px; color: #eee;
+    }
+    .section-desc { text-align: center; color: #999; max-width: 600px; margin: 0 auto 50px; }
+    /* 居中提示文字样式 */
+    .tip-text {
+      text-align: center;
+      color: #bbb;
+      margin: 1em 0; /* 上下各一行间距 */
+    }
+    /* Intro content */
+    .intro-content {
+      max-width: 800px; margin: 0 auto; font-size: 1.05rem; color: #bbb;
+    }
+    .intro-content a { color: #66ccff; }
+    .intro-content p { margin-bottom: 16px; }
+    /* Card grid */
+    .grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;
+    }
+    .card {
+      background: #1a1a2a; border-radius: 16px; overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4); transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,0.6); }
+    .card img {
+      width: 100%; height: 220px; object-fit: cover; display: block;
+    }
+    .card-body { padding: 24px; }
+    .card-body h3 { font-size: 1.3rem; margin-bottom: 8px; color: #eee; }
+    .card-body .role { font-size: 0.85rem; color: #4da6ff; font-weight: 600; margin-bottom: 12px; }
+    .card-body p { color: #aaa; font-size: 0.95rem; margin-bottom: 16px; }
+    .card-body a {
+      display: inline-block; color: #4da6ff; text-decoration: none;
+      font-weight: 600; font-size: 0.9rem; transition: gap 0.2s;
+    }
+    .card-body a::after { content: " →"; }
+    .card-body a:hover { text-decoration: underline; }
+    /* Footer */
+    footer {
+      background: #1a1a2e; color: #a8b2d1; text-align: center;
+      padding: 32px 24px; font-size: 0.9rem;
+    }
+    footer a { color: #4da6ff; text-decoration: none; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      nav a { margin-left: 14px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="inner">
+    <div class="logo">星天<span>SKFD</span></div>
+    <div>
+      <a href="#about">关于</a>
+      <a href="#figures">人物</a>
+    </div>
+  </div>
+</nav>
+<!-- Hero -->
+<section class="hero">
+  <div>
+    <h1>SLPN-SK创作者网站-天致制作站</h1>
+    <p>
+      咕咕咕！！咕咕咕！！咕咕咕！！咕咕咕！！
+    </p>
+    <a href="#figures" class="btn">了解作者们！</a>
+  </div>
+</section>
+<!-- About -->
+<section id="about">
+  <h2 class="section-title">关于本站</h2>
+  <p class="section-desc">
+    一个为杰出，高质，有发展前途的SK内创作者们准备的视频展示区域
+  </p>
+  <!-- 居中提示，上下自动空一行 -->
+  <p class="tip-text">注意：该网站还处于初始建设阶段</p>
+  <div class="intro-content">
+    <p>
+      <strong>天致制作站</strong> 是一个开放的知识分享平台，旨在通过精美的图文展示，
+      让更多人了解那些在视频制作领域显示出卓越能力的人物。
+    </p>
+    <p>
+      嗯，对，咕咕咕！咕咕咕！
+    </p>
+    <p>
+      如果你有任何建议或想推荐新的人物，欢迎随时联系我们。
+      作者：Mizar-开阳
+    </p>
+    <p>
+      前往 <a href="https://www.bilibili.com" target="_blank" rel="noopener">bilibili.com</a> 观看更多精彩视频。
+    </p>
+  </div>
+</section>
+<!-- Figures -->
+<section id="figures">
+  <h2 class="section-title">杰出创作者</h2>
+  <p class="section-desc">
+    点击「了解更多」即可跳转到外部网站查看详情。
+  </p>
+  <p>
+  咕~这里还什么都没有呢！
+  </p> 
+<div style="text-align: center; padding: 30px 0; background: #000;">
+  <a href="https://www.bilibili.com" target="_blank" rel="noopener" style="color: yellow; font-size: 1.1rem;">前往 bilibili.com</a>
+<br>
+<a href="https://python123.io" target="_blank" rel="noopener" style="color: yellow; font-size: 1.1rem;">编程网站 Python123.io</a>
+<a href= "https://skdc.rth1.xyz/?source_btm_token=a1128.b17614.c770171.d88956.e6d7f6850-5aa7-4d7b-861d-766e27d7c206&need_out_animation=right&finish_when_network_unavailable=false&bdx_monitor_append_params=%7B%22enter_from%22%3A%22im_safe_jump_to_web%22%7D&from_im=true&ug_route_out_customs_info=%7B%22cert_id%22%3A80963330%7D&disable_auto_expose=1&enable_webview_select_search=1&font_scale=1.0" target="_blank" rel="noopener" style="color: red; font-size: 1.1rem;">前往 星联阁官网</a>
+</div>
+<footer>
+  <p>&copy; 2026 渣渣帅。，无敌！？ · <a href="#about">关于本站</a></p>
+</footer>
+</body>
+</html>
